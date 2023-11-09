@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317710615362",
+    "project_id": "bloco-de-notas-fc572",
+    "storage_bucket": "bloco-de-notas-fc572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317710615362:android:39ccf321f57199baff7edb",
+        "android_client_info": {
+          "package_name": "com.example.notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCwqAZT2O8YpiuYSHlDB2DLB8TZ29RJZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
