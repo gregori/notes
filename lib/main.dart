@@ -14,7 +14,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: Firebase.initializeApp(),
+      future: Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: 'AIzaSyDCwqAZT2O8YpiuYSHlDB2DLB8TZ29RJZs',
+            appId: '1:317710615362:android:39ccf321f57199baff7edb',
+            messagingSenderId: '1:317710615362:android:39ccf321f57199baff7edb',
+            projectId: 'bloco-de-notas-fc572'),
+      ),
       builder: ((context, snapshot) {
         if (snapshot.hasError) {
           return const MaterialApp(
