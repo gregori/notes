@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:notes/screens/login_screen.dart';
 import 'package:notes/screens/main_screen.dart';
 import 'package:notes/screens/register_screen.dart';
 import 'package:notes/screens/welcome_screen.dart';
@@ -35,6 +36,7 @@ class MainApp extends StatelessWidget {
             routes: {
               '/': (context) => const WelcomeScreen(),
               '/register': (context) => const RegisterScreen(),
+              '/login': (context) => const LoginScreen(),
               '/main': (context) => const MainScreen(),
             },
           );
