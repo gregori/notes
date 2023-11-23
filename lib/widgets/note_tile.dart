@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/screens/edit_note_screen.dart';
 // import 'package:notes/screens/edit_note_screen.dart';
 import 'package:notes/services/notes_service.dart';
 
@@ -22,12 +23,12 @@ class NoteTile extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ListTile(
         onTap: () {
-          // Navigator.pushNamed(context, '/edit',
-          //     arguments: EditNoteScreenArguments(
-          //       title: title,
-          //       description: subtitle,
-          //       noteId: id,
-          //     ));
+          Navigator.pushNamed(context, '/edit',
+              arguments: EditNoteScreenArguments(
+                title: title,
+                description: subtitle,
+                noteId: id,
+              ));
         },
         onLongPress: () {
           notesService.deleteNote(id: id);
